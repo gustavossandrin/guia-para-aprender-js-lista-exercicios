@@ -13,6 +13,11 @@
 var entrada = 'a'
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'vogal'
+if (entrada === 'a' || entrada === 'e' || entrada === 'i' || entrada === 'o' || entrada === 'u'){
+    var resultado = 'vogal'
+}
+else {
+    var resultado = 'consoante'
+}
 
 console.log(resultado)

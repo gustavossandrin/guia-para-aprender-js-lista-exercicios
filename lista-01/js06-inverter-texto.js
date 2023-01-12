@@ -8,9 +8,15 @@
  */
 
 // Entrada
-var entrada = 'abacate'
+var entrada = 'gustavo'
 
 // gere a variável invertido de forma a transforma a entrada na saída esperada
-var invertido = '?'
+var tamanhoVariavel = entrada.length - 1
+var invertido = ''
+for (var caracter of entrada){
+     invertido += entrada[tamanhoVariavel]
+     tamanhoVariavel--
+}
+
 
 console.log(invertido)

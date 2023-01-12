@@ -12,9 +12,16 @@
  */
 
 // Entrada
-var entrada = 1
+var entrada = 7
+const DIASDASEMANA = ['Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabádo']
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = 'Domingo'
+if (entrada <= 7 && entrada >= 1 ){
+    var resultado = DIASDASEMANA[entrada - 1]
+}
+else{
+    var resultado = 'Entrada inválida.'
+}
+
 
 console.log(resultado)

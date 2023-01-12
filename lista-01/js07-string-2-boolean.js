@@ -14,9 +14,14 @@
  */
 
 // Entrada
-var entrada = "J";
+var entrada = 'si';
 
 // implemente aqui o condicional para retornar o boolean (true/false) com base na entrada
-var resultado = false;
-
+entrada = entrada.toUpperCase()
+if (entrada === 'S' || entrada === 'SIM' || entrada === 'Y' || entrada === 'YES' || entrada == '1'){
+    var resultado = true
+}
+else{
+    var resultado = false
+}
 console.log(resultado);

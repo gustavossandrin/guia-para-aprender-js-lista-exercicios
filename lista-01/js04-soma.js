@@ -16,10 +16,15 @@
  */
 
 // Entrada
-var n1 = 'A'
-var n2 = 40
+var n1 = 2
+var n2 = 'aaa'
 
 // Saída
-var resultado = '?'
+if (typeof(n1) === 'number' && typeof(n2) === 'number'){
+    var resultado = n1 + n2
+}
+else{
+    var resultado = 'Este typeoff não é aceito'
+}
 
 console.log(resultado)
