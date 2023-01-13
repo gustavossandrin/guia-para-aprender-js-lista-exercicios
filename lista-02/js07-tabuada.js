@@ -18,6 +18,9 @@
 // Entrada
 var entrada = 5
 
-var tabuada = [5, 10, 15]
+var tabuada = []
+for (let i=1; i<=10; i++)  {
+	tabuada.push(entrada * i)
+}
 
 console.log(tabuada)

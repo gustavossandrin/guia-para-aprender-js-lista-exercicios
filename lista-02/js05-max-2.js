@@ -13,8 +13,30 @@
 
 // Entrada
 var entrada = [40,42,1,0,-10]
-
-var segundoMaior = 40
+var segundoMaior, maior, aux
+for (var valor in entrada){
+    if (valor == 0){
+        maior = entrada[valor]
+        continue
+    }
+    if (valor == 1){
+        if (entrada[valor] > maior){
+            segundoMaior = maior
+            maior = entrada[valor]
+            continue
+        }
+        segundoMaior = entrada[valor]
+        continue
+    }
+    if (entrada[valor] > maior){
+        segundoMaior = maior
+        maior = entrada[valor]
+        continue
+    }
+    if (entrada[valor] > segundoMaior){
+        segundoMaior = entrada[valor]
+    }
+}
 
 
 console.log(segundoMaior)

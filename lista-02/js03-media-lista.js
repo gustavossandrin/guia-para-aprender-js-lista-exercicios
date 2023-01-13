@@ -1,5 +1,5 @@
 /**
- * Faça um programa que faça a soma de todos os números de uma lista de números
+ * Faça um programa que faça a media de todos os números de uma lista de números
  * 
  * ENTRADA              SAÍDA
  * [1,3,5,7,8,10]        5.7
@@ -12,7 +12,9 @@ var entrada = [1,1,40]
 var soma = 0
 
 // percorrer a lista e fazer a somatória dos elementos
-
-let media = 0
+for (var value of entrada){
+    soma += value
+}
+let media = soma / entrada.length
 
 console.log(media.toFixed(1))

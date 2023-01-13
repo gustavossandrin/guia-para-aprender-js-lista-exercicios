@@ -10,11 +10,15 @@
 
 // Entrada
 var entrada = [1,2,3,4,5,6,7]
-
+var impares = 0
+var pares = 0
 // processamento
-
-//saida
-var impares = 4,
-    pares = 3
+for (var value of entrada){
+    if (value % 2 == 1){
+        impares += 1
+        continue
+    }
+    pares += 1
+}
 
 console.log(`${impares} ${pares}`)

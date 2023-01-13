@@ -8,10 +8,18 @@
 
 // Entrada
 var entrada = [1,3,5,7,8]
-
+var resto 
 var saida = []
 
 // gerar a lista de saida
-saida = ['impar', 'impar', 'impar', 'impar', 'par']
+for (var value of entrada){
+    resto = value % 2
+    if (resto === 1){
+        saida.push('Ímpar')
+    }
+    else{
+        saida.push('Par')
+    }
+}
 
 console.log(saida)
